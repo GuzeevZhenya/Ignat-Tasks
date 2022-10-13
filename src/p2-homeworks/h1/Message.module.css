@@ -1,0 +1,52 @@
+.message {
+  width: 200px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: flex-end;
+}
+
+.message p {
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__time {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(2, 47, 28);
+}
+
+.message__name {
+  color: rgb(8, 8, 8);
+}
+
+.message__container {
+  width: 200px;
+  position: relative;
+  background: rgb(50, 93, 154);
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin: 5px;
+}
+
+.message__container ::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 16px solid rgb(50, 93, 154);
+  left: -15px;
+  bottom: 0px;
+}
